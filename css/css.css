@@ -1,0 +1,52 @@
+body{
+    /* background: blue; */
+}
+
+
+img {
+    width: 87px;
+    height: 60px;
+}
+
+.frase {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+}
+  
+.frase span {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
+}
+
+.Logo {
+    display: inline-block; 
+    /* margin-left: 0; */
+}
+
+.menu {
+    font-size: 24px;
+    display: inline-block;  /*para que el display tome el contenido que tiene el elemento*/
+    position: absolute;  /*para ubicacion con respecto a la pos. del padre*/
+    right: 0;
+}
+
+.menu li {       /*para modificar loS li del menu*/
+    display: inline-block;
+    margin-left: 30px;
+}
+  
+.menu li:before {  /*invocar el Seudoelemento. Las viñetas del menu*/
+                     /*.menu li:before; es a donde se va a aplicar y despues de los : es en donde va */
+    content: '∘';    /* va el pseudoelemento dentro de las ''. Entidades html (assets) (caracteres asignados a cada teclado) https://dev.w3.org/html5/html-author/charref*/
+    font-size: 30px;
+    line-height: 20px;
+    color: blue;
+}
+  
+.menu a {  /*para el menu*/
+    color: black;  /*color de la letra del menu*/
+    text-decoration: none;  /*quitarle el decorado al texto del menu*/
+}
