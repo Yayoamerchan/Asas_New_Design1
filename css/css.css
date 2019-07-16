@@ -76,16 +76,37 @@ body{
     font-size: 30px;
 }
 
-.portafolio{
-    /* border: 2px solid red; */
+.quienes-somos{
+    background-image: url('../images/somos.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    /* border: 2px dotted blue; */
+}
+
+.somos-details{
+    margin-left: 250px; 
+    text-align: justify;
+    display: inline-block;
+    /* width: 650px; */
     padding: 1px;
+}
+
+.somos-details p {
+    font-size: 25px;
+    color: white;
+    width: 700px;
+}
+
+
+.portafolio {
+    /* border: 2px solid purple; */
 }
 
 .service{
     /* border: 2px dotted blue; */
     padding: 1px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -105,12 +126,6 @@ body{
     font-size: 25px;
 }
 
-.service-image{
-    display: inline-block;
-    margin: 0;
-    /* border: 2px solid greenyellow; */
-    padding: 1px;
-}
 
 .service-image img{
     width: 220px;
