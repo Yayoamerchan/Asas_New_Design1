@@ -1,32 +1,33 @@
 body{
     /* background: blue; */
+    background-image: url('../images/Margen.png');  /*los dos puntos es para devolvernos la carpeta, es decir, seleccion de la imagen background.png de la carpeta images, desde la carpeta CSS donde estamos programando invie.css por eso nos devolvemos con .. para tomar la ruta*/
+    background-size: cover; /*para que la imagen haga la mejor distribucion en el tamaño disponible*/ 
+    margin: auto;
+    margin-top: 65px;
+    width: 1100px;
 }
-
 
 img {
-    width: 87px;
-    height: 60px;
-}
-
-.frase {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 29px;
-}
-  
-.frase span {
-    text-decoration: underline;
+    width: 116px;
+    height: 82px;
 }
 
 .header {
+    margin: auto;
+    width: 900px;
     position: relative;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
-}
+    display: flex;      /*aplica el flex al padre, para que lo tomen los hijos inmediatamente inferiores o siguientes*/
+    justify-content: space-between;
+} 
 
 .Logo {
     display: inline-block; 
-    /* margin-left: 0; */
+    margin: 0;
 }
 
 .menu {
+    /* border: 2px dotted red; */
+    margin-top: 3px;
     font-size: 24px;
     display: inline-block;  /*para que el display tome el contenido que tiene el elemento*/
     position: absolute;  /*para ubicacion con respecto a la pos. del padre*/
@@ -49,4 +50,21 @@ img {
 .menu a {  /*para el menu*/
     color: black;  /*color de la letra del menu*/
     text-decoration: none;  /*quitarle el decorado al texto del menu*/
+}
+
+.Sentence{
+    text-align: center;
+}
+
+.frase {
+    margin: 0;
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 5px 70px 5px 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+  
+.frase span {
+    text-decoration: underline;
 }
