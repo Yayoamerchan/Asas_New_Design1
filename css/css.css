@@ -7,7 +7,7 @@ body{
     width: 1100px;
 }
 
-img {
+.logo img {
     width: 116px;
     height: 82px;
 }
@@ -20,7 +20,7 @@ img {
     justify-content: space-between;
 } 
 
-.Logo {
+.logo {
     display: inline-block; 
     margin: 0;
 }
@@ -67,4 +67,52 @@ img {
   
 .frase span {
     text-decoration: underline;
+}
+
+.subtitle{
+    margin-left: 150px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.portafolio{
+    /* border: 2px solid red; */
+    padding: 1px;
+}
+
+.service{
+    /* border: 2px dotted blue; */
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-details{
+    text-align: justify;
+    display: inline-block;
+    width: 650px;
+    /* border: 2px solid green; */
+    padding: 1px;
+}
+
+.service-details h3 {
+    font-size: 30px;
+}
+
+.service-details p {
+    font-size: 25px;
+}
+
+.service-image{
+    display: inline-block;
+    margin: 0;
+    /* border: 2px solid greenyellow; */
+    padding: 1px;
+}
+
+.service-image img{
+    width: 220px;
+    height: 250px;
 }
