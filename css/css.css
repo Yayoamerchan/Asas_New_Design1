@@ -140,3 +140,76 @@ body{
     width: 220px;
     height: 250px;
 }
+
+.footer {
+    padding: 30px 0 30px 0;
+    background: #E17000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedorfoot{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contacto img {
+    background: white;
+    display: inline-block;
+    margin: 0 0 20px 120px;
+}
+
+.contacto strong {
+    display: block;
+}
+
+
+.contactos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario{
+    width: 562px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.formcol1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formcol2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formcol1 input{
+    width: 250px;
+}
