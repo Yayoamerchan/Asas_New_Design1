@@ -7,9 +7,89 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ASAS Group - Tu Mejor Aliado!!!</title>
     <link rel="icon" type="image.png" href="images/favicon.png" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap|Allerta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="canonical" href="https://www.asasgroup.com.co/"> <!-- como que es la web que sale debajo en google -->
 </head>
 <body>
-    Inicio de la web de ASAS Group
-    
+  <header class="header"> <!-- encabezado -->
+    <figure class="logo">
+      <a href="#"> <!-- link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
+        <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+      </a>
+    </figure>
+    <nav class="menu">
+      <ul> <!-- unordenal list -->
+        <li> <!-- list item --> <!-- target="_self" QUE ES-->
+          <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
+        </li>
+        <li>
+          <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
+        </li>
+        <li>
+          <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- este enlace nos lleva a el nuevo doc .html llamado precios.   ej. precios.html el atributo target="_blank" hable la pagina en una nueva pestaña-->
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- <main></main> Contenido principal del <body> de un documento. Puede ser usado una sola vez por página, Este elemento no puede ser hijo de ninguno de los siguientes: header, nav, article, aside y footer. -->
+
+  <div class="sentence contenedor"> <!-- frase -->
+      <h1 class="frase">¡No pierdas el enfoque de tu negocio, permítenos ser tu aliado contable, financiero y tributario!</h1>
+  </div>
+  <section class="somos contenedor" id="qsomos"> <!-- quienes somos -->
+    <h2 class="subtitle">QUIENES SOMOS</h2>
+    <article class="quienes-somos">
+      <div class="somos-details">
+        <p>Somos un equipo de <b>profesionales especializados</b> en asesoría contable, financiera y tributaria. Reconocidos por contribuir en el mejoramiento continuo de nuestros clientes.</p>
+      </div>
+      <!-- <figure class="somos-image">
+
+      </figure> -->
+    </article>
+  </section>
+  <section class="portafolio contenedor" id="portaservicios"> <!-- portafolio -->
+    <h2 class="subtitle">PORTAFOLIO DE SERVICIOS</h2>
+    <article class="service">
+      <div class="service-details">
+        <h3 class="service-title">ASESORIA CONTABLE Y FINANCIERA</h3>
+        <p>Nuestro objetivo principal es conseguir que la información contable muestre la realidad del negocio y permita efectuar análisis sobre los resultados que se han obtenido.</p>
+        <p>La contabilidad debe ser aliada del empresario para tomar decisiones sobre la gestión de la compañía y para cumplir con las normas legales y tributarias.</p>
+      </div>
+      <figure class="service-image">
+        <img src="images/Contabilidad.png" alt="Servicio Contable y Financiero"/>
+      </figure>
+    </article>
+  </section>    
+  <section class="contenedor"> <!-- noticias -->
+    <h2 style="border: 1px solid blue; height: 140px;">mas cosas aca</h2>
+  </section>
+  <footer class="footer header" id="trabajemosjuntos"> <!-- trabajemos juntos -->
+    <div class="contenedorfoot">
+      <div class="contacto">
+        <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
+        <div class="contactos">
+          <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
+          <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> mailto:info@asasgroup.com</span></a>
+        </div>
+      </div>
+      <form class="formulario"> <!-- los name son tomados de la web original  -->
+        <div class="formcol1">
+          <label for="nombre">Nombre</label>
+            <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
+          <label for="telefono">Teléfono</label>
+            <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
+          <label for="mail">E-mail</label>
+            <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
+        </div>
+        <div class="formcol2">
+          <label for="asunto">Asunto</label>
+            <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
+            <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
+        </div>
+      </form>
+    </div>
+  </footer>
 </body>
 </html>
