@@ -7,52 +7,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ASAS Group - Tu Mejor Aliado!!!</title>
     <link rel="icon" type="image.png" href="images/favicon.png" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap|Allerta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css"/>
+    <link rel="canonical" href="https://www.asasgroup.com.co/"> <!-- como que es la web que sale debajo en google -->
 </head>
 <body>
- <header class="header">
+  <header class="header"> <!-- encabezado -->
     <figure class="logo">
-     <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+      <a href="#"> <!-- link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
+        <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+      </a>
     </figure>
     <nav class="menu">
-     <ul> <!-- unordenal list -->
-       <li> <!-- list item -->
-         <a >Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
-       </li>
-       <li>
-         <a >Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
-       </li>
-       <li>
-         <a >Trabajemos Juntos</a> <!-- este enlace nos lleva a el nuevo doc .html llamado precios.   ej. precios.html el atributo target="_blank" hable la pagina en una nueva pestaña-->
-       </li>
-     </ul>
+      <ul> <!-- unordenal list -->
+        <li> <!-- list item --> <!-- target="_self" QUE ES-->
+          <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
+        </li>
+        <li>
+          <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
+        </li>
+        <li>
+          <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- este enlace nos lleva a el nuevo doc .html llamado precios.   ej. precios.html el atributo target="_blank" hable la pagina en una nueva pestaña-->
+        </li>
+      </ul>
     </nav>
-</header>
-<div class="Sentence">
-    <h1 class="frase">¡No pierdas el enfoque de <span>tu negocio</span>, permítenos ser tu aliado contable, financiero y tributario!</h1>
-</div>
-<section class="somos">
-  <h2 class="subtitle">QUIENES SOMOS</h2>
-  <article class="quienes-somos">
-    <div class="somos-details">
-      <p>Somos un equipo de profesionales especializados en asesoría contable, financiera y tributaria. Reconocidos por contribuir en el mejoramiento continuo de nuestros clientes.</p>
-    </div>
-    <figure class="somos-image">
-    </figure>
-  </article>
-</section>
-<section class="portafolio">
-  <h2 class="subtitle">PORTAFOLIO DE SERVICIOS</h2>
-  <article class="service">
-    <div class="service-details">
-      <h3 class="service-title">ASESORIA CONTABLE Y FINANCIERA</h3>
-      <p>Nuestro objetivo principal es conseguir que la información contable muestre la realidad del negocio y permita efectuar análisis sobre los resultados que se han obtenido.</p>
-      <p>La contabilidad debe ser aliada del empresario para tomar decisiones sobre la gestión de la compañía y para cumplir con las normas legales y tributarias.</p>
-    </div>
-    <figure class="service-image">
-      <img src="images/Contabilidad.png" alt="Servicio Contable y Financiero"/>
-    </figure>
-  </article>
-</section>    
+  </header>
+  
+  <!-- <main></main> Contenido principal del <body> de un documento. Puede ser usado una sola vez por página, Este elemento no puede ser hijo de ninguno de los siguientes: header, nav, article, aside y footer. -->
+
+  <div class="sentence contenedor"> <!-- frase -->
+      <h1 class="frase">¡No pierdas el enfoque de tu negocio, permítenos ser tu aliado contable, financiero y tributario!</h1>
+  </div>
+  <section class="somos contenedor" id="qsomos"> <!-- quienes somos -->
+    <h2 class="subtitle">QUIENES SOMOS</h2>
+    <article class="quienes-somos">
+      <div class="somos-details">
+        <p>Somos un equipo de <b>profesionales especializados</b> en asesoría contable, financiera y tributaria. Reconocidos por contribuir en el mejoramiento continuo de nuestros clientes.</p>
+      </div>
+      <!-- <figure class="somos-image">
+
+      </figure> -->
+    </article>
+  </section>
+  <section class="portafolio contenedor" id="portaservicios"> <!-- portafolio -->
+    <h2 class="subtitle">PORTAFOLIO DE SERVICIOS</h2>
+    <article class="service">
+      <div class="service-details">
+        <h3 class="service-title">ASESORIA CONTABLE Y FINANCIERA</h3>
+        <p>Nuestro objetivo principal es conseguir que la información contable muestre la realidad del negocio y permita efectuar análisis sobre los resultados que se han obtenido.</p>
+        <p>La contabilidad debe ser aliada del empresario para tomar decisiones sobre la gestión de la compañía y para cumplir con las normas legales y tributarias.</p>
+      </div>
+      <figure class="service-image">
+        <img src="images/Contabilidad.png" alt="Servicio Contable y Financiero"/>
+      </figure>
+    </article>
+  </section>    
+  <section class="contenedor"> <!-- noticias -->
+    <h2 style="border: 1px solid blue; height: 140px;">mas cosas aca</h2>
+  </section>
 </body>
 </html>
