@@ -1,0 +1,118 @@
+body{
+    /* background: blue; */
+    background-image: url('../images/Margen.png');  /*los dos puntos es para devolvernos la carpeta, es decir, seleccion de la imagen background.png de la carpeta images, desde la carpeta CSS donde estamos programando invie.css por eso nos devolvemos con .. para tomar la ruta*/
+    background-size: cover; /*para que la imagen haga la mejor distribucion en el tamaño disponible*/ 
+    margin: auto;
+    margin-top: 65px;
+    width: 1100px;
+}
+
+.logo img {
+    width: 116px;
+    height: 82px;
+}
+
+.header {
+    margin: auto;
+    width: 900px;
+    position: relative;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
+    display: flex;      /*aplica el flex al padre, para que lo tomen los hijos inmediatamente inferiores o siguientes*/
+    justify-content: space-between;
+} 
+
+.logo {
+    display: inline-block; 
+    margin: 0;
+}
+
+.menu {
+    /* border: 2px dotted red; */
+    margin-top: 3px;
+    font-size: 24px;
+    display: inline-block;  /*para que el display tome el contenido que tiene el elemento*/
+    position: absolute;  /*para ubicacion con respecto a la pos. del padre*/
+    right: 0;
+}
+
+.menu li {       /*para modificar loS li del menu*/
+    display: inline-block;
+    margin-left: 30px;
+}
+  
+.menu li:before {  /*invocar el Seudoelemento. Las viñetas del menu*/
+                     /*.menu li:before; es a donde se va a aplicar y despues de los : es en donde va */
+    content: '∘';    /* va el pseudoelemento dentro de las ''. Entidades html (assets) (caracteres asignados a cada teclado) https://dev.w3.org/html5/html-author/charref*/
+    font-size: 30px;
+    line-height: 20px;
+    color: blue;
+}
+  
+.menu a {  /*para el menu*/
+    color: black;  /*color de la letra del menu*/
+    text-decoration: none;  /*quitarle el decorado al texto del menu*/
+}
+
+.Sentence{
+    text-align: center;
+}
+
+.frase {
+    margin: 0;
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 5px 70px 5px 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+  
+.frase span {
+    text-decoration: underline;
+}
+
+.subtitle{
+    margin-left: 150px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.portafolio{
+    /* border: 2px solid red; */
+    padding: 1px;
+}
+
+.service{
+    /* border: 2px dotted blue; */
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-details{
+    text-align: justify;
+    display: inline-block;
+    width: 650px;
+    /* border: 2px solid green; */
+    padding: 1px;
+}
+
+.service-details h3 {
+    font-size: 30px;
+}
+
+.service-details p {
+    font-size: 25px;
+}
+
+.service-image{
+    display: inline-block;
+    margin: 0;
+    /* border: 2px solid greenyellow; */
+    padding: 1px;
+}
+
+.service-image img{
+    width: 220px;
+    height: 250px;
+}
