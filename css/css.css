@@ -22,6 +22,10 @@ body{
     position: relative;
 }
 
+.pedidoJu{
+    background: lightblue;
+}
+
 .logo img {
     width: 116px;
     height: 82px;
@@ -213,4 +217,12 @@ body{
 
 .formcol1 input{
     width: 250px;
+}
+
+input{
+    margin-bottom: 12px;
+}
+
+label{
+    margin-bottom: 4px;
 }
