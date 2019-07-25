@@ -13,24 +13,26 @@
 </head>
 <body>
   <header class="header"> <!-- encabezado -->
-    <figure class="logo">
-      <a href="#"> <!-- link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
-        <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
-      </a>
-    </figure>
-    <nav class="menu">
-      <ul> <!-- unordenal list -->
-        <li> <!-- list item --> <!-- target="_self" QUE ES-->
-          <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
-        </li>
-        <li>
-          <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
-        </li>
-        <li>
-          <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- este enlace nos lleva a el nuevo doc .html llamado precios.   ej. precios.html el atributo target="_blank" hable la pagina en una nueva pestaña-->
-        </li>
-      </ul>
-    </nav>
+    <div class="encabezado">
+      <figure class="logo">
+        <a href="#"> <!-- link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
+          <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+        </a>
+      </figure>
+      <nav class="menu">
+        <ul> <!-- unordenal list -->
+          <li> <!-- list item --> <!-- target="_self" QUE ES-->
+            <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
+          </li>
+          <li>
+            <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
+          </li>
+          <li>
+            <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- este enlace nos lleva a el nuevo doc .html llamado precios.   ej. precios.html el atributo target="_blank" hable la pagina en una nueva pestaña-->
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
   <!-- <main></main> Contenido principal del <body> de un documento. Puede ser usado una sola vez por página, Este elemento no puede ser hijo de ninguno de los siguientes: header, nav, article, aside y footer. -->
@@ -71,7 +73,7 @@
         <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
         <div class="contactos">
           <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
-          <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> mailto:info@asasgroup.com</span></a>
+          <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> info@asasgroup.com</span></a>
         </div>
       </div>
       <form class="formulario"> <!-- los name son tomados de la web original  -->
