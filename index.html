@@ -12,33 +12,33 @@
     <link rel="canonical" href="https://www.asasgroup.com.co/"> <!-- como que es la web que sale debajo en google -->
 </head>
 <body>
-  <header class="header"> <!-- encabezado -->
-    <figure class="logo">
-      <a href="index.html"> <!--(href="#" para el inicio de la pagina) link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
-        <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
-      </a>
-    </figure>
-    <nav class="menu">
-      <ul> <!-- unordenal list -->
-        <li> <!-- list item --> <!-- target="_self" QUE ES-->
-          <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
-        </li>
-        <li>
-          <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id portaservicios. Ruta relativa-->
-        </li>
-        <li>
-          <a href="noticias.html"">Noticias</a> <!--este enlace nos lleva a el nuevo doc .html llamado noticias.html  ej. noticias.html el atributo target="_blank" abre la pagina en una nueva pestaña-->
-        </li>  
-        <li>
-          <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- el # link para llevarnos a la seccion con id trabajemosjuntos. Ruta relativa-->
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- <main></main> Contenido principal del <body> de un documento. Puede ser usado una sola vez por página, Este elemento no puede ser hijo de ninguno de los siguientes: header, nav, article, aside y footer. -->
+  <div class="headercompleto">
+    <header class="encabezado"> <!-- encabezado -->
+      <figure class="logo">
+        <a href="index.html"> <!--(href="#" para el inicio de la pagina) link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
+          <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+        </a>
+      </figure>
+      <nav class="menu">
+        <ul> <!-- unordenal list -->
+          <li> <!-- list item --> <!-- target="_self" QUE ES-->
+            <a href="#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
+          </li>
+          <li>
+            <a href="#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id portaservicios. Ruta relativa-->
+          </li>
+          <li>
+            <a href="noticias.html"">Noticias</a> <!--este enlace nos lleva a el nuevo doc .html llamado noticias.html  ej. noticias.html el atributo target="_blank" abre la pagina en una nueva pestaña-->
+          </li>  
+          <li>
+            <a href="#trabajemosjuntos">Trabajemos Juntos</a> <!-- el # link para llevarnos a la seccion con id trabajemosjuntos. Ruta relativa-->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <main></main> Contenido principal del <body> de un documento. Puede ser usado una sola vez por página, Este elemento no puede ser hijo de ninguno de los siguientes: header, nav, article, aside y footer. -->
 
-    <div class="sentence contenedor"> <!-- frase -->
+    <div class="sentence encabezado"> <!-- frase -->
         <h1 class="frase">¡No pierdas el enfoque de tu negocio, permítenos ser tu aliado contable, financiero y tributario!</h1>
     </div>
   </div>
@@ -49,11 +49,9 @@
       <div class="somos-details">
         <p>Somos un equipo de <b>profesionales especializados</b> en asesoría contable, financiera y tributaria. Reconocidos por contribuir en el mejoramiento continuo de nuestros clientes.</p>
       </div>
-      <!-- <figure class="somos-image">
-
-      </figure> -->
     </article>
   </section>
+
   <section class="portafolio contenedor" id="portaservicios"> <!-- portafolio -->
     <h2 class="subtitle">PORTAFOLIO DE SERVICIOS</h2>
     <article class="service">
@@ -67,16 +65,9 @@
       </figure>
     </article>
   </section>    
-<<<<<<< HEAD
-  <section class="contenedor"> <!-- noticias -->
-    <h2 style="border: 1px solid blue; height: 140px;">mas cosas aca</h2>
-  </section>
+
+
   <footer class="footer" id="trabajemosjuntos"> <!-- trabajemos juntos -->
-=======
-
-
-  <footer class="footer header" id="trabajemosjuntos"> <!-- trabajemos juntos -->
->>>>>>> noticias
     <div class="contenedorfoot">
       <div class="contacto">
         <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">

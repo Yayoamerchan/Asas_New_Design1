@@ -12,7 +12,6 @@ body{
     background-image: url('../images/Margen.png');  /*los dos puntos es para devolvernos la carpeta, es decir, seleccion de la imagen background.png de la carpeta images, desde la carpeta CSS donde estamos programando invie.css por eso nos devolvemos con .. para tomar la ruta*/
     background-size: cover; /*para que la imagen haga la mejor distribucion en el tamaño disponible*/ 
     margin: 0;
-    margin: 70px auto 0;
     padding: 0;
 }
 
@@ -22,8 +21,9 @@ body{
     position: relative;
 }
 
-.pedidoJu{
-    background: lightblue;
+.headercompleto{
+    background-image: url('../images/acountant.jpg');
+    padding: 20px 0 40px 0;
 }
 
 .logo img {
@@ -77,6 +77,7 @@ body{
 
 .sentence{
     text-align: center;
+    color: orangered;
 }
 
 .frase {
