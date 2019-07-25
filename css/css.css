@@ -62,8 +62,8 @@ body{
     cursor: pointer; /* pone la mano como cursor */
 }
   
-.menu li:before {  /*invocar el Seudoelemento. Las viñetas del menu*/
-                     /*.menu li:before; es a donde se va a aplicar y despues de los : es en donde va */
+.menu li:before {  /*Seudoelemento. Las viñetas del menu colocadas antes de los li del menu*/
+                     /*.menu li:before; es a donde se va a aplicar y despues de los : es en donde va antes (before) o despues (after)*/
     content: '∘';    /* va el pseudoelemento dentro de las ''. Entidades html (assets) (caracteres asignados a cada teclado) https://dev.w3.org/html5/html-author/charref*/
     font-size: 30px;
     line-height: 20px;
