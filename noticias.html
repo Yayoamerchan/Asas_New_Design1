@@ -5,67 +5,75 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ASAS Group - Noticias</title>
+    <title>ASAS Group - Tu Mejor Aliado!!!</title>
     <link rel="icon" type="image.png" href="images/favicon.png" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap|Allerta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css"/>
     <link rel="canonical" href="https://www.asasgroup.com.co/"> <!-- como que es la web que sale debajo en google -->
 </head>
 <body>
-    <header class="encabezado"> <!-- encabezado -->
-        <figure class="logo">
-            <a href="index.html"> <!--(href="#" para el inicio de la pagina) link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
-            <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
-            </a>
-        </figure>
-        <nav class="menu">
-            <ul> <!-- unordenal list -->
-            <li> <!-- list item --> <!-- target="_self" QUE ES-->
-                <a href="index.html#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
-            </li>
-            <li>
-                <a href="index.html#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
-            </li>
-            <li>
-                <a href="#noticias">Noticias</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
-            </li>  
-            <li>
-                <a href="index.html#trabajemosjuntos">Trabajemos Juntos</a> <!-- el href="index.html#trabajemosjuntos" abre el html seccion trabajemosjuntos-->
-            </li>
-            </ul>
-        </nav>
+  <div class="background">
+    <header class="encabezado encabezafoot"> <!-- encabezado -->
+      <figure class="logo">
+        <a href="index.html"> <!--(href="#" para el inicio de la pagina) link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
+          <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
+        </a>
+      </figure>
+      <nav class="menu">
+        <ul> <!-- unordenal list -->
+          <li> <!-- list item --> <!-- target="_self" QUE ES-->
+            <a href="index.html#qsomos">Quienes Somos</a> <!--a: anchor (ancla) para enlaces, para definir a dónde va el enlace. Esto también recibe rutas relativas y absolutas-->
+          </li>
+          <li>
+            <a href="index.html#portaservicios">Portafolio</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
+          </li>
+          <li>
+            <a href="#noticias">Noticias</a>  <!--en el href, el # es el link para llevarnos a la seccion con id guitarras. Ruta relativa-->
+          </li>  
+          <li>
+            <a href="index.html#trabajemosjuntos">Trabajemos Juntos</a> <!-- el href="index.html#trabajemosjuntos" abre el html seccion trabajemosjuntos-->
+          </li>
+        </ul>
+      </nav>
     </header>
 
+  </div>
+
+    <div class="sentence encabezado"> <!-- frase -->
+      <h1 class="frase">¡Bienvenido a la actualidad Financiera, Contable y Tributaria!</h1>
+    </div>
+
+
+
     <section class="contenedor"> <!-- noticias -->
-        <h2 style="border: 1px solid blue; height: 140px;">Noticias Noticiosas <br>Extra Extra!!!</h2>
+        <h2>Noticias Noticiosas <br>Extra Extra!!!</h2>
     </section>
     
     <footer class="footer" id="trabajemosjuntos"> <!-- trabajemos juntos -->
-        <div class="contenedorfoot">
-            <div class="contacto">
-            <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
-            <div class="contactos">
-                <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
-                <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> mailto:info@asasgroup.com</span></a>
-            </div>
-            </div>
-            <form class="formulario"> <!-- los name son tomados de la web original  -->
-            <div class="formcol1">
-                <label for="nombre">Nombre</label>
-                <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
-                <label for="telefono">Teléfono</label>
-                <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
-                <label for="mail">E-mail</label>
-                <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
-            </div>
-            <div class="formcol2">
-                <label for="asunto">Asunto</label>
-                <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
-                <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
-            </div>
-            </form>
+      <div class="contenedorfoot encabezafoot">
+        <div class="contacto">
+          <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
+          <div class="contactos">
+            <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
+            <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> info@asasgroup.com</span></a>
+          </div>
         </div>
-        </footer>
-
-</body>
+        <form class="formulario"> <!-- los name son tomados de la web original  -->
+          <div class="formcol1">
+            <label for="nombre">Nombre</label>
+              <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
+            <label for="telefono">Teléfono</label>
+              <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
+            <label for="mail">E-mail</label>
+              <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
+          </div>
+          <div class="formcol2">
+            <label for="asunto">Asunto</label>
+              <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
+              <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -15,15 +15,36 @@ body{
     padding: 0;
 }
 
+input{
+    margin-bottom: 12px;
+}
+
+input:focus, textarea:focus {  /* pseudocodigo para ponerle fondo a los campos del formulario una vez se le haga focus */
+    background: lightgrey;
+}
+
+label{
+    margin-bottom: 4px;
+}
+
 .contenedor {   /*Toma el contenido lo centra y le da un ancho*/
     width: 800px;
     margin: auto;
     position: relative;
 }
 
-.headercompleto{
+.background {
+    background-size: cover;
     background-image: url('../images/acountant.jpg');
-    padding: 20px 0 40px 0;
+}
+
+.encabezafoot{
+    width: 1000px;
+}
+
+.headercompleto{
+    height: 400px;
+    margin-bottom: 30px;
 }
 
 .logo img {
@@ -32,7 +53,6 @@ body{
 }
 
 .encabezado {
-    width: 1000px;
     margin: auto;
     padding: 0;
     position: static;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
@@ -81,8 +101,7 @@ body{
 }
 
 .frase {
-    margin: 0;
-    border: 3px solid blue;
+    margin: 0 0 0 480px;
     border-radius: 20px;
     padding: 5px 70px 5px 70px;
     font-family: 'Montserrat', sans-serif;
@@ -90,7 +109,8 @@ body{
 }
   
 .subtitle{
-    margin-left: 150px;
+    margin: 0 auto 20px;
+    text-align: center;
     color: orange;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -155,7 +175,6 @@ body{
 }
 
 .contenedorfoot{
-    width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -180,7 +199,7 @@ body{
 .contacto img {
     background: white;
     display: inline-block;
-    margin: 0 0 20px 120px;
+    margin-left: 120px;
 }
 
 .contacto strong {
@@ -220,10 +239,34 @@ body{
     width: 250px;
 }
 
-input{
-    margin-bottom: 12px;
+.volver{
+    margin-bottom: 30px;
 }
 
-label{
-    margin-bottom: 4px;
-}
+.button {
+    margin: 10px 190px 0 0;
+    border-radius: 12px;  /*Borde redondeado*/
+    border: none;         /*none: para que no tenga borde*/
+    color: white;         /*Color de la letra*/
+    padding: 7px 12px;    /*Margen interior*/ 
+    cursor: pointer;      /*para que el cursor se vuelva una mano cuando nos ponemos sobre el boton*/
+    text-decoration: none;  /*quitarle el decorado al texto del boton*/
+    font-size: 18px;      /*tamaño*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
+    background: #3b679e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+/*     background: #fd324e; */  /*Color del background*/
+    /* background: linear-gradient(to left, #fe344e, #ff7250); */  /*linear-gradient[para el degradado](to left [desde la derecha hacia la izquiera, desde este color, hasta otro color])*/
+    
+    /* lo siguiente es el degradado pero copiado de www.colorzilla.comm/gradient-editor */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+    /*background: rgb(243,197,189); /* Old browsers */
+    /*background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
+  }
