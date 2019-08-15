@@ -78,7 +78,7 @@ body{
 
 .portafolio{
     /* border: 2px solid red; */
-    overflow: hidden;
+    overflow: hidden; /* oculta lo que esta fuera de la caja */
     padding: 1px;
 }
 
