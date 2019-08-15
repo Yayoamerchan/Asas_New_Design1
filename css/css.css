@@ -138,7 +138,12 @@ label{
 .somos-details{
     text-align: justify;
     display: block;
-    padding: 1px;
+}
+
+.portafolio{
+    /* border: 2px solid red; */
+    overflow: hidden; /* oculta lo que esta fuera de la caja */
+    padding: 20px 0;
 }
 
 .somos-details p {
