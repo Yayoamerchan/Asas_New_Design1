@@ -28,7 +28,7 @@ label{
 }
 
 .contenedor {   /*Toma el contenido lo centra y le da un ancho*/
-    width: 800px;
+    width: 1000px;
     margin: auto;
     position: relative;
 }
@@ -44,7 +44,6 @@ label{
 
 .headercompleto{
     height: 400px;
-    margin-bottom: 30px;
 }
 
 .logo img {
@@ -54,7 +53,7 @@ label{
 
 .encabezado {
     margin: auto;
-    padding: 0;
+    padding: 6px 30px 0 30px;
     position: static;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
     display: flex;      /*aplica el flex al padre, para que lo tomen los hijos inmediatamente inferiores o siguientes*/
     justify-content: space-between;
@@ -66,7 +65,6 @@ label{
 }
 
 .menu {
-    margin-top: 3px;
     font-size: 24px;
     display: inline-block;  /*para que el display tome el contenido que tiene el elemento*/
     /* position: absolute; */  /*para ubicacion con respecto a la pos. del padre*/
@@ -97,19 +95,17 @@ label{
 
 .sentence{
     text-align: center;
-    color: #000040;
+    color: darkorange;
 }
 
 .frase {
     margin: 0 0 0 480px;
-    border-radius: 20px;
-    padding: 5px 70px 5px 70px;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
 }
 
 .opacity {
-    opacity: 0.5; /*vlrs de 0 - 1. 1 vr por defecto totalmente visible. 0 invisible*/
+    opacity: 0.9; /*vlrs de 0 - 1. 1 vr por defecto totalmente visible. 0 invisible*/
   }
   
 .opacity:hover {  /*pseudoclase hover, para cambios de valores dentro de los elementos*/
@@ -181,8 +177,8 @@ label{
 }
 
 .footer {
-    padding: 30px 0 30px 0;
-    margin: 0 34px 0 19px;
+    padding: 30px 0;
+    margin: 0 34px 0 16px;
     background: #E17000;
     display: block;
     position: static;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/

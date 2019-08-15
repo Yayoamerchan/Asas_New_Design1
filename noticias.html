@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="background">
-    <header class="encabezado encabezafoot"> <!-- encabezado -->
+    <header class="encabezado"> <!-- encabezado -->
       <figure class="logo">
         <a href="index.html"> <!--(href="#" para el inicio de la pagina) link para ir parte superior de la pagina o <a href="index.html" para cargar nuevamente la pagina> -->
           <img src="images/logo_ASAS.png" alt="Invie logotipo"/>
@@ -38,48 +38,48 @@
     </header>
   </div>
 
-    <div class="sentence encabezado"> <!-- frase -->
-      <h1 class="frase">¡Bienvenido a la actualidad Financiera, Contable y Tributaria!</h1>
-    </div>
-    <div class="clock contenedor">
-      <div class="fecha">
-        <script src="fechayhora.js">
-        </script>
-      </div> 
-      <div id="reloj"></div>
-    </div>
+  <div class="sentence encabezado"> <!-- frase -->
+    <h1 class="frase">¡Bienvenido a la actualidad Financiera, Contable y Tributaria!</h1>
+  </div>
+  <div class="clock contenedor">
+    <div class="fecha">
+      <script src="fechayhora.js">
+      </script>
+    </div> 
+    <div id="reloj"></div>
+  </div>
 
-    <section class="contenedor"> <!-- noticias -->
-        <h2>Noticias Noticiosas ------ Extra Extra!!!</h2>
-        <img src="images/vencimientos.png" alt="Vencimientos Renta Persona Natural" class="news">
-    </section>
+  <section class="contenedor"> <!-- noticias -->
+      <h2>Noticias Noticiosas ------ Extra Extra!!!</h2>
+      <img src="images/vencimientos.png" alt="Vencimientos Renta Persona Natural" class="news">
+  </section>
 
-    <footer class="footer" id="trabajemosjuntos"> <!-- trabajemos juntos -->
-      <div class="contenedorfoot encabezafoot">
-        <div class="contacto">
-          <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
-          <div class="contactos">
-            <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
-            <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> info@asasgroup.com</span></a>
-          </div>
+  <footer class="footer" id="trabajemosjuntos"> <!-- trabajemos juntos -->
+    <div class="contenedorfoot encabezafoot">
+      <div class="contacto">
+        <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
+        <div class="contactos">
+          <a href="tel: +573203535551"><strong>Telefono</strong><span> 3203535571</span></a>
+          <a href="mailto:info@asasgroup.com"><strong>E-mail</strong><span> info@asasgroup.com</span></a>
         </div>
-        <form class="formulario"> <!-- los name son tomados de la web original  -->
-          <div class="formcol1">
-            <label for="nombre">Nombre</label>
-              <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
-            <label for="telefono">Teléfono</label>
-              <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
-            <label for="mail">E-mail</label>
-              <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
-          </div>
-          <div class="formcol2">
-            <label for="asunto">Asunto</label>
-              <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
-              <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
-          </div>
-        </form>
       </div>
-    </footer>
+      <form class="formulario"> <!-- los name son tomados de la web original  -->
+        <div class="formcol1">
+          <label for="nombre">Nombre</label>
+            <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
+          <label for="telefono">Teléfono</label>
+            <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
+          <label for="mail">E-mail</label>
+            <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
+        </div>
+        <div class="formcol2">
+          <label for="asunto">Asunto</label>
+            <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
+            <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
+        </div>
+      </form>
+    </div>
+  </footer>
 
-  </body>
+</body>
 </html>
