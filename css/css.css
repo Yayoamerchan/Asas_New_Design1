@@ -152,7 +152,7 @@ label{
 .portafolio .portaservicios {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .somos-details p {
@@ -198,8 +198,6 @@ label{
 .volver{
     display: inline-block;
     position: absolute;
-    right: 150px;
-    /* margin-top: 20px; */
 }
 
 .footer {
