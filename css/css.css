@@ -40,9 +40,9 @@ label{
     background-image: url('../images/acountant.jpg');
 }
 
-.encabezafoot{
+/* .encabezafoot{
     width: 1000px;
-}
+} */
 
 .headercompleto{
     height: 400px;
@@ -201,15 +201,24 @@ label{
 }
 
 .footer {
-    padding: 30px 0;
+    /* padding: 30px 0;
     margin: 0 34px 0 16px;
     background: #E17000;
-    display: block;
-    position: static;  /*le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu*/
+    display: flex;
+    position: static;  le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu */
+
+    margin: auto;
+    padding: 6px 30px 0 30px;
+    background: #E17000;
+    /* position: static;  le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu */
+    display: flex;      /*aplica el flex al padre, para que lo tomen los hijos inmediatamente inferiores o siguientes*/
+    justify-content: center;
+
+
 }
 
 .contenedorfoot{
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -318,4 +327,30 @@ margin: 10px 0 20px 100px;
     background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
     background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
+  }
+
+  .social{
+    margin-left: 20px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .social-link {  /*se le dan las siguientes caracteristicas a las a porque no tienen contenido visual*/
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* margin: 0 10px; */
+    background-size: 50px 50px;
+  }
+  
+   .social-link.facebook {
+    background-image: url('../images/facebook.svg');
+    /* background-size: 50px 50px;  lo subimos para darle el mismo tamaño a todos*/
+  }
+ 
+  .social-link.instagram {
+    background-image: url('../images/instagram.svg');
   }
