@@ -59,7 +59,7 @@
   </div>
 
   <footer class="footer" id="trabajemosjuntos"> <!-- trabajemos juntos -->
-    <div class="contenedorfoot encabezafoot">
+    <div class="contenedorfoot">
       <div class="contacto">
         <img src="images/logo_ASAS_gris.png" alt="Logo Gris" width="150px">
         <div class="contactos">
@@ -70,20 +70,25 @@
       <form class="formulario"> <!-- los name son tomados de la web original  -->
         <div class="formcol1">
           <label for="nombre">Nombre</label>
-            <input type="text" required name="nombre" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
+            <input type="text" required name="name" id="nombre" placeholder="Nombre"/> <!-- input: Type (texto, email, etc); required (asegurar que se diligencie s/tipo); placeholder (texto difuminado dentro de la caja de txt); value (caja de txt con valores por defecto); id (para enlazar con el atributo for de label y al dar click en nombre me ponga focus en su respectiva caja de txt); name (identifica que campo del formulario se envia y con que vr al server).-->
           <label for="telefono">Teléfono</label>
-            <input type="tel" required name="" id="telefono" placeholder="Celular o Fijo"/>
+            <input type="tel" required name="phone" id="telefono" placeholder="Celular o Fijo"/>
           <label for="mail">E-mail</label>
-            <input type="email" required name="" id="mail" placeholder="example@mail.com"/>
+            <input type="email" required name="correo" id="mail" placeholder="example@mail.com"/>
         </div>
         <div class="formcol2">
           <label for="asunto">Asunto</label>
-            <textarea name="mensaje" id="asunto" cols="35" rows="7"></textarea>
+            <textarea name="mensaje" id="asunto" cols="35" rows="7" required></textarea>
             <input type="submit" class="button"/> <!-- type=submit por defecto pone el value enviar en español/ingles segun el idioma del Sistema Operarivo. Para forzar que salga Enviar independiente del idioma del SO, ponemos el Value=Enviar).--> 
         </div>
       </form>
+      <div class="social">
+        <!-- <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a> --> <!-- hay dos clases separadas por espacio -->
+        <a href="https://www.facebook.com/asasgroupsas" class="social-link facebook"></a> <!-- ej. "social-link facebook" -->
+        <!-- <a href="https://github.com/leonidasesteban" class="social-link github"></a> -->
+        <a href="https://www.instagram.com/asas_group" class="social-link instagram"></a>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
