@@ -40,10 +40,6 @@ label{
     background-image: url('../images/acountant.jpg');
 }
 
-/* .encabezafoot{
-    width: 1000px;
-} */
-
 .headercompleto{
     height: 400px;
 }
@@ -69,7 +65,6 @@ label{
 .menu {
     font-size: 24px;
     display: inline-block;  /*para que el display tome el contenido que tiene el elemento*/
-    /* position: absolute; */  /*para ubicacion con respecto a la pos. del padre*/
 }
 
 .menu ul {       /*para modificar loS li del menu*/
@@ -143,10 +138,7 @@ label{
 }
 
 .portafolio{
-    /* border: 2px solid red; */
     overflow: hidden; /* oculta lo que esta fuera de la caja */
-    /* padding: 20px 0;
-    margin-bottom: 15px; */
 }
 
 .portafolio .portaservicios {
@@ -169,7 +161,6 @@ label{
     width: 300px;
     width: 480px;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column-reverse;
     align-items: center;
 }
@@ -177,7 +168,6 @@ label{
 .service-details{
     text-align: justify;
     display: inline-block;
-    /* width: 650px; */
     padding: 1px;
 }
 
@@ -201,28 +191,17 @@ label{
 }
 
 .footer {
-    /* padding: 30px 0;
-    margin: 0 34px 0 16px;
-    background: #E17000;
-    display: flex;
-    position: static;  le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu */
-
     margin: auto;
     padding: 6px 30px 0 30px;
     background: #E17000;
-    /* position: static;  le damos esta posicion para que la posicion absoluta del menu se ubique con esta referencia ya que header es el padre de menu */
     display: flex;      /*aplica el flex al padre, para que lo tomen los hijos inmediatamente inferiores o siguientes*/
     justify-content: center;
-
-
 }
 
 .contenedorfoot{
-    /* margin: auto; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .contacto{
@@ -342,13 +321,11 @@ margin: 10px 0 20px 100px;
     display: inline-block;
     width: 50px;
     height: 50px;
-    /* margin: 0 10px; */
     background-size: 50px 50px;
   }
   
    .social-link.facebook {
     background-image: url('../images/facebook.svg');
-    /* background-size: 50px 50px;  lo subimos para darle el mismo tamaño a todos*/
   }
  
   .social-link.instagram {
