@@ -9,8 +9,8 @@ html{
 
 body{
     font-family: 'Allerta', sans-serif;
-    background-image: url('../images/Margen.png');  /*los dos puntos es para devolvernos la carpeta, es decir, seleccion de la imagen background.png de la carpeta images, desde la carpeta CSS donde estamos programando invie.css por eso nos devolvemos con .. para tomar la ruta*/
-    background-size: cover; /*para que la imagen haga la mejor distribucion en el tamaño disponible*/ 
+    background-image: url('../images/MargenLateral.png');  /*los dos puntos es para devolvernos la carpeta, es decir, seleccion de la imagen background.png de la carpeta images, desde la carpeta CSS donde estamos programando invie.css por eso nos devolvemos con .. para tomar la ruta*/
+    background-size: cover; /*para que la imagen haga la mejor distribucion en el tamaño disponible*/  
     margin: 0;
     padding: 0;
 }
@@ -31,6 +31,8 @@ label{
     width: 1000px;
     margin: auto;
     position: relative;
+    padding: 20px 0;
+    margin-bottom: 15px;
 }
 
 .background {
@@ -143,7 +145,14 @@ label{
 .portafolio{
     /* border: 2px solid red; */
     overflow: hidden; /* oculta lo que esta fuera de la caja */
-    padding: 20px 0;
+    /* padding: 20px 0;
+    margin-bottom: 15px; */
+}
+
+.portafolio .portaservicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .somos-details p {
@@ -154,21 +163,27 @@ label{
 }
 
 .service{
+    border: 2px solid red;
     padding: 1px;
+    margin-bottom: 20px;
+    width: 300px;
+    width: 480px;
     display: flex;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 .service-details{
     text-align: justify;
     display: inline-block;
-    width: 650px;
+    /* width: 650px; */
     padding: 1px;
 }
 
 .service-details h3 {
     font-size: 23px;
+    text-align: center;
 }
 
 .service-details p {
@@ -178,6 +193,13 @@ label{
 .service-image img{
     width: 220px;
     height: 250px;
+}
+
+.volver{
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    /* margin-top: 20px; */
 }
 
 .footer {
